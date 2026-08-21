@@ -27,5 +27,26 @@ R// Porque escribir una sola URL en el navegador no se descarga unicamente el ar
 
 ---
 
-4. Análisis de una solicitud HTTP
+3. Análisis de una solicitud HTTP
+
+| Elemento            | Resultado                                                    | 
+|---------------------|--------------------------------------------------------------|
+| URL                 | [JavaScript](https://www.google-analytics.com/analytics.js)  | 
+| Metodo HTTP         | GET                                                          | 
+| Codigo de estado    | 200 OK (from disk cache)                                     |
+| Host/Dominio        | www.google-analytics.com                                     |
+| Tipo de recurso     | script (JavaScript)                                          | 
+| Tiempo de respuesta | 3.49 ms                                                      | 
+
+
+![Análisis de la solicitud HTTP](evidencias/request.png)
+
+Análisis
+¿Qué recurso solicito el navegador?
+R// El navegador solicito el recurso "analytics.js", que es un archivo JS. Este archivo corresponde al script de seguimiento de Google Analytics.
+
+¿Qué información permite determinar si la solicitud fue atendida correctamente?
+R// La informacion que nos permite determinar si la solicitud fue atendida correctamente es el codigo de estado HTTP que devuelve el servidor, en este caso el Status Code 200 OK, esto nos confirma que el recurso fue entregado sin errores.
+
+
 
