@@ -19,6 +19,8 @@ Tabla con al menos 5 recursos diferentes (HTML, CSS, JS, imágenes, fuentes).
 
 Total de solicitudes observadas: 123 Request 
 
+![Recursos cargados por la aplicación](./evidencias/Network.png)
+
 Análisis: 
 ¿Por qué una sola URL puede generar múltiples solicitudes HTTP?  
 R// Porque escribir una sola URL en el navegador no se descarga unicamente el archivo HTML principal, ese documento normalmente tiene referencias a muchos otros recursos necesarios para mostrar la pagina completa (CSS, JavaScript, imagenes, tipografias, librerias o datos de la API)
