@@ -88,24 +88,23 @@ R// Al hacer clic en el boton "Traducir", el navegador ejecuta codigo JS asociad
 
 6. Reconstrucción del flujo observado
 
-## 6. Reconstrucción del flujo observado
 
 ```mermaid
 flowchart LR
-    Usuario -->|Acción inicial (abrir página)| Navegador
-    Navegador -->|Solicita recursos| SolicitudHTTP
+    Usuario --> Navegador
+    Navegador -->|Solicita recursos iniciales| SolicitudHTTP
     SolicitudHTTP --> Servidor
     Servidor -->|Responde con HTML, CSS, JS, imágenes| RespuestaHTTP
     RespuestaHTTP --> Navegador
     Navegador --> DOM
     DOM -->|Renderiza| Interfaz
 
-    %% Inspección DOM
+    %% Inspección DOM y CSS
     Usuario -->|Inspección con DevTools| JavaScript
     JavaScript -->|Modifica temporalmente| DOM
     DOM -->|Cambio visible| Interfaz
 
-    %% Interacción dinámica
+    %% Interacción dinámica (ejemplo Traducir)
     Usuario -->|Clic en Traducir| JavaScript
     JavaScript -->|Nueva solicitud| SolicitudHTTP
     SolicitudHTTP --> Servidor
@@ -114,8 +113,8 @@ flowchart LR
     JavaScript -->|Actualiza| DOM
     DOM -->|Interfaz dinámica| Usuario
 
-
-
+```
+---
 
 
 
