@@ -115,6 +115,29 @@ flowchart LR
 
 ```
 ---
+7. Observado vs Inferido
+
+Elementos observados directamente:
+• Solicitudes HTTP registradas en la pestaña Network (urls, metodos, codigos de estado, tiempos).
+• Estructura del DOM y etiquetas HTML visibles en Elements
+• Modificaciones temporales al DOM y estilos reflejadas en la interfaz
+• Solicitudes dinamicas al hacer clic en botones como Traducir o Descargar, visibles en Newtork
+• Tiempos de respuesta desglosados en la pestaña Timing.
+
+Elementos inferidos:
+• Procesos internos del servidor (como gestiona la caché)
+• Logica de negocio detras de los botones
+• Uso de frameworks o librerias en el servidor que no se muestran directamente en el navegdor
+
+---
+
+8. Conclusiones
+
+   1. Durante la practica entendi que las herramientas de desarrollo del navegador no solo sirven para "ver código", sibno tambien analizar a detalle como se comunica el cliente y el servidor. Esto me dio una vision mas clara de lo que pasa detras de una pagina web.
+   2. Al modificar el DOM y los estilos comprobe que esos cambios son temporales y locales. Esto me ayudo a reforzar la importancia de distinguir pruebas y produccion.
+   3. Al observar las solicitudes dinamicas, pude ver como las acciones del usuario generan nuevas peticiones y respuestas que actualizan la interfaz sin recargar toda la pagina. Esto me ayudo a comprender mejor el papel de JavaScript en la interaccion y la experiencia de uso
+
+---
 
 
 
