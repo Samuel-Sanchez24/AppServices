@@ -48,5 +48,26 @@ R// El navegador solicito el recurso "analytics.js", que es un archivo JS. Este 
 ¿Qué información permite determinar si la solicitud fue atendida correctamente?
 R// La informacion que nos permite determinar si la solicitud fue atendida correctamente es el codigo de estado HTTP que devuelve el servidor, en este caso el Status Code 200 OK, esto nos confirma que el recurso fue entregado sin errores.
 
+---
+
+4.Inspeccion del DOM
+
+| Elemento seleccionado| Etiqueta HTML | Contenido original       | Modificacion realizada                               |
+|----------------------|---------------|--------------------------|------------------------------------------------------|
+| Titulo principal     | <h1>          | Formatos institucionales | Formatos editados institucionales (cambio de color)  |
+
+
+![Inspección y modificación del DOM](evidencias/dom.png)
+
+
+Análisis
+¿La modificación realizada sobre el DOM alteró permanentemente la aplicación o los archivos almacenados en el servidor? Justifique.  
+R// La modificacion no altera permanentemente la aplicacion ni tampoco los archivos almacenados en el servidor. Cunado se edita un elemento desde la pestalla Elements en DevTools, el cambio ocurre unicamente en la representacion local del DOM que mantiene el navegador en memoria.
+
+Cuando volvemosa recargar la pagina, el navegador vuelve a solicitar el documento original al servidor y el cambio desaparece porque nunca se guardo en el back.  
+
+
+
+
 
 
