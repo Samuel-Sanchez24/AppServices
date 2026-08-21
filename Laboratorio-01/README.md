@@ -66,6 +66,30 @@ R// La modificacion no altera permanentemente la aplicacion ni tampoco los archi
 
 Cuando volvemosa recargar la pagina, el navegador vuelve a solicitar el documento original al servidor y el cambio desaparece porque nunca se guardo en el back.  
 
+---
+
+5. Análisis de una interacción dinámica
+| Acción realizada          | ¿Generó nueva solicitud? | URL solicitada                             | Método HTTP | Código de estado | Tipo de respuesta |
+| --------------------------|--------------------------|--------------------------------------------|-------------|------------------|-------------------|
+| Clic en botón “Traducir”  | Sí                       | ``translateHtml`` (servicio de traducción) | GET         | 200 OK           | Documento HTML/JS |
+
+
+![Interacción observada en Network](evidencias/interaccion.png)
+
+Análisis
+Explique la relación entre la acción realizada por el usuario y la solicitud observada.
+R// Al hacer clic en el boton "Traducir", el navegador ejecuta codigo JS asociado a esa funcionalidad, ese codigo genera una nueva solicitud HTTP hacia el servicio de traduccion (translateHtml), que aparece en la pestaña Network, el servidor devuelve el contenido traducido y el navegador procesa la respuesta y actualiza el DOM, mostrando la pagina en el idioma seleccionado.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
