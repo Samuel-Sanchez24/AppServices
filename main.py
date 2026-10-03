@@ -3,9 +3,12 @@ from sqlalchemy import text
 from sqlalchemy.exc import SQLAlchemyError
 from api.estudiantes import router as estudiantes_router
 from database import SessionLocal
+from api import mediciones
+
 
 app = FastAPI(title="API de estudiantes")
 app.include_router(estudiantes_router)
+app.include_router (mediciones.router)
 
 
 @app.get("/")
