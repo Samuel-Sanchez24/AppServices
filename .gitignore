@@ -67,3 +67,6 @@ temp/
 *.tmp
 *.bak
 *.cache
+
+# Registros de ejecución de la aplicación (logs/app.log y sus rotaciones app.log.1, app.log.2 ...)
+logs/

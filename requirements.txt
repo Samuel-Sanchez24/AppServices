@@ -1,0 +1,24 @@
+# Taller 2 - API IoT (MQTT + FastAPI + SQLAlchemy + PostgreSQL)
+# Python 3.10 o superior.  Instalar con:  pip install -r requirements.txt
+
+# API
+fastapi==0.143.0
+uvicorn==0.53.0
+pydantic==2.13.5
+
+# Base de datos (ORM + controladores PostgreSQL)
+SQLAlchemy==2.0.54
+psycopg[binary]==3.3.6
+# Respaldo en Python puro: se usa solo si psycopg no se puede cargar (p. ej. DLL bloqueada por Windows)
+pg8000==1.31.5
+
+# MQTT
+paho-mqtt==2.1.0
+
+# Configuración y zona horaria (tzdata es necesario en Windows para "America/Bogota")
+python-dotenv==1.2.3
+tzdata>=2025.2
+
+# Pruebas automáticas y generador de evidencias
+httpx==0.28.1
+pytest==9.1.1
